@@ -1,19 +1,28 @@
 import 'package:flutter/material.dart';
-import 'LoginScreen.dart';
-import 'SignScreen.dart';
+import 'screens/login.dart';
+import 'screens/SignScreen.dart';
+import 'screens/details.dart';
+
 void main() {
 
   runApp(MyApp());
 }
-
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Login UI',
-      debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      theme: ThemeData(
+        primaryColor: Color(0xff0c2f47),
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      home: details(),
+
     );
   }
 }
+
+
+
+
+
+
